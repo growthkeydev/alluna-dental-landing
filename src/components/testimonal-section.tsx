@@ -133,7 +133,7 @@ export const TestimonalSection = () => {
                 className="bg-light-blue rounded-3xl w-[288px] min-w-[288px] p-6 space-y-4 cursor-grab"
                 key={index}
             >
-                <div className="flex items-center justify-center gap-10">
+                <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                         <Image
                             src="/images/avatar.png"
@@ -180,20 +180,20 @@ export const TestimonalSection = () => {
                 backgroundSize: '',
                 backgroundRepeat: 'no-repeat',
             }}
-            className="px-32 pt-10 flex flex-col items-center justify-center relative">
+            className="md:px-2 px-12 xl:px-24 pt-12 flex flex-col items-center justify-center relative">
 
             <p className="text-base text-dark">Testimonials</p>
-            <p className="text-dark text-5xl font-bold mt-5">
+            <p className="text-dark text-5xl font-bold mt-4">
                 What Our Patients Say About Us
             </p>
-            <p className="text-dark text-[22px] font-bold mt-5 text-center">
+            <p className="text-dark text-[22px] font-bold mt-4 text-center">
                 We're proud to be trusted by patients across Los Angeles who wanted
                 natural,
                 <br />
                 confidence-boosting veneers. These are their words, in their own voices.
             </p>
 
-            <div className="flex items-center justify-center gap-10 mt-10">
+            <div className="flex items-center justify-center gap-10 mt-4">
                 <Image
                     src="/svg/google-reviews.svg"
                     alt="Google Reviews"
@@ -210,7 +210,7 @@ export const TestimonalSection = () => {
                 />
             </div>
 
-            <div className="relative w-full mt-10">
+            <div className="relative w-full mt-12">
                 <div
                     className={`absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showLeftShadow ? 'opacity-100' : 'opacity-0'
                         }`}
@@ -229,7 +229,7 @@ export const TestimonalSection = () => {
                 </div>
             </div>
 
-            <div className="flex items-center justify-center gap-4 mt-10 w-max bg-teal-blue rounded-2xl px-8 py-5">
+            <div className="flex items-center justify-center gap-[10px] my-12 w-max bg-teal-blue rounded-2xl px-8 py-5">
                 <p className="text-lg font-bold text-white">Get Your Free Quote</p>
                 <ArrowRightIcon className="text-white" />
             </div>

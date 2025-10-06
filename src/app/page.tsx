@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection/>
-      {/* <TestimonalSection/>
+      <TestimonalSection/>
       <ServiceSection/>
       <BenefitSection/>
       <TimeOfferSection/>
@@ -33,7 +33,7 @@ export default function Home() {
       <FaqSection/>
       <GetInTouchSection/>
       <FooterSection/>
-      <CopyrightSection/> */}
+      <CopyrightSection/>
     </div>
   );
 }

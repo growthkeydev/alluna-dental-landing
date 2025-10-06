@@ -1,4 +1,4 @@
-import { ArrowRightIcon, DoctorIcon, FinanceToothIcon, HappyToothIcon, ToothIcon, TreatmentIcon } from "@/icons"
+import { ArrowRightIcon, DoctorIcon, FinanceToothIcon, HappyToothIcon, TreatmentIcon } from "@/icons"
 
 export const BenefitSection = () => {
 
@@ -32,23 +32,23 @@ export const BenefitSection = () => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
             }}
-            className="px-32 pt-20 pb-32 flex items-center justify-center flex-col">
+            className="md:px-2 px-12 xl:px-24 pt-24 pb-32 flex items-center justify-center flex-col">
             <p className="text-lg">Key Benefits</p>
-            <p className="text-dark mt-1 font-bold text-[40px]">Why Choose Alluna Dental?</p>
+            <p className="text-dark pt-4 font-bold text-4xl 2xl:text-[40px]">Why Choose Alluna Dental?</p>
 
-            <div className="flex flex-row mt-20">
+            <div className="flex flex-row flex-wrap justify-center space-y-3 py-14">
                 {
                     benefits.map((benefit, index) => (
-                        <div key={index} className="flex flex-col items-center gap-2 w-[330px] text-center">
+                        <div key={index} className="flex flex-col items-center gap-5 w-[330px] text-center">
                             {benefit.icon}
-                            <p className="text-dark font-semibold text-[28px]">{benefit.title}</p>
+                            <p className="text-dark font-semibold text-xl 2xl:text-[28px]">{benefit.title}</p>
                             <p className="text-arsenic text-lg font-normal">{benefit.description}</p>
                         </div>
                     ))
                 }
             </div>
 
-            <div className="flex items-center justify-center gap-4 mt-10 w-max bg-teal-blue rounded-2xl px-8 py-5">
+            <div className="flex items-center justify-center gap-4 w-max bg-teal-blue rounded-2xl px-8 py-5">
                 <p className="text-lg font-bold text-white">Make Appointment</p>
                 <ArrowRightIcon className="text-white" />
             </div>

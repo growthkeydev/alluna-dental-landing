@@ -54,7 +54,7 @@ export const HeroSection = () => {
 
                     <p className="font-bold text-4xl 2xl:text-[64px] text-white pt-10">A Natural, <br />Confident Smile <br />Designed Just for You</p>
                     <p className="font-bold text-xl 2xl:text-2xl text-white pt-6">From Studio City to Beverly Hills, see why hundreds of <br />patients choose Alluna Dental for natural results, luxury <br />comfort, and world-class smile makeovers.</p>
-                    <div className="flex items-center justify-center gap-4 mt-14 w-max bg-space-blue rounded-2xl px-8 py-5">
+                    <div className="flex items-center justify-center gap-[10px] mt-14 w-max bg-space-blue rounded-2xl px-8 py-5">
                         <p className="text-lg font-bold text-white">Begin Your Smile Journey</p>
                         <ArrowRightIcon className="text-white" />
                     </div>
