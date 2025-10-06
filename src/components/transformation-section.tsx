@@ -57,7 +57,7 @@ export const TransformationSection = () => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
             }}
-            className="px-32 pt-20 flex flex-col items-center justify-center ">
+            className="md:px-2 px-12 xl:px-24 pt-24 flex flex-col items-center justify-center ">
             <Image
                 width={1000}
                 height={1000}
@@ -66,18 +66,18 @@ export const TransformationSection = () => {
                 className="w-full"
             />
 
-            <div
-
-                className="grid grid-cols-2 gap-x-3 w-full pb-20">
+            <div className="grid grid-cols-2 gap-x-5 gap-y-8 w-full py-14 pb-20">
                 {
                     transformations.map((item, index) => (
-                        <div key={index} className="flex items-start mt-10">
-                            {item.icon}
-                            <div className="ml-10">
-                                <p className="text-2xl font-bold">{item.title}</p>
+                        <div key={index} className="flex items-start">
+                            <div>
+                                {item.icon}
+                            </div>
+                            <div className="ml-5">
+                                <p className="text-xl xl:text-2xl font-bold pb-5">{item.title}</p>
                                 {
                                     item.items.map((item, index) => (
-                                        <li key={index} className="text-lg ml-6">{item}</li>
+                                        <li key={index} className="text-base xl:text-lg ml-6">{item}</li>
                                     ))
                                 }
                             </div>
