@@ -47,14 +47,14 @@ export const ServiceSection = () => {
             <p className="text-space-blue text-lg md:text-xl">
               Welcome To Alluna Dental
             </p>
-            <p className="text-dark font-bold text-2xl md:text-4xl mt-4">
+            <p className="text-dark font-bold text-2xl md:text-4xl mt-4 pb-9">
               The New Face of Cosmetic Dentistry in Studio City
             </p>
           </div>
 
             {services.map((service, index) => (
               <div key={index}>
-                <div className="flex items-center gap-2">
+                <div className={`flex items-center gap-2 ${index !==0 && "mt-8"}`}>
                   {service.icon}
                   <p className="text-gray text-base font-semibold">
                     {service.title}

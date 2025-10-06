@@ -18,12 +18,12 @@ import { TransformationSection } from "@/components/transformation-section";
 export default function Home() {
   return (
     <div>
-      {/* <HeroSection/>
+      <HeroSection/>
       <TestimonalSection/>
-      <ServiceSection/> */}
+      <ServiceSection/>
       <BenefitSection/>
       <TimeOfferSection/>
-      {/* <ExperienceSection/>
+      <ExperienceSection/>
       <TransformationSection/>
       <ProtectSection/>
       <CertificateSection/>
@@ -33,7 +33,7 @@ export default function Home() {
       <FaqSection/>
       <GetInTouchSection/>
       <FooterSection/>
-      <CopyrightSection/> */}
+      <CopyrightSection/>
     </div>
   );
 }

@@ -23,29 +23,65 @@ export const TimeOfferSection = () => {
                 />
                 <div className="flex flex-col items-start text-left col-start-2 md:col-start-4 md:col-span-2 xl:col-start-3 xl:col-span-2 2xl:col-start-4 2xl:col-span-3">
                     <p className="text-white font-bold text-3xl xl:text-[40px] ">Limited-Time Offer</p>
-                    <p className="text-white font-normal text-base xl:text-lg mt-2 ">
+                    <p className="text-white font-normal text-base xl:text-lg py-4">
                         Transform Your Smile with 3D Printed Veneers — Just $7,500 for a Full Upper Set.
                         Book Today and Lock In Your Price.
                     </p>
 
-                    <div className="flex items-center justify-center gap-4 mt-10 w-max bg-white rounded-2xl px-8 py-5 cursor-pointer">
+                    <div className="flex items-center justify-center gap-4 w-max bg-white rounded-2xl px-8 py-5 cursor-pointer">
                         <p className="text-base xl:text-lg font-bold text-teal-blue">Get Your Free Quote Now</p>
                         <ArrowRightIcon className="text-teal-blue" />
                     </div>
                 </div>
             </div>
 
-            <div className="flex items-start justify-center gap-10 mt-20">
-                <div className="w-1/2 h-full">
+            <div className="flex flex-row items-stretch justify-center gap-12 py-24">
+                <div className="w-1/2 flex">
                     <Image
                         width={636}
                         height={618}
                         src="/svg/time-offer-section-dentist.svg"
                         alt="Service Section Background"
-                        className="w-full h-full rounded-2xl"
+                        className="object-cover w-full h-full rounded-2xl"
                     />
                 </div>
-                <div className="w-1/2">
+                <div className="w-1/2 flex flex-col justify-between">
+                    <div>
+                        <p className="text-space-blue text-lg">What Sets Our Veneers Apart</p>
+                        <p className="text-dark font-bold text-3xl xl:text-[40px] py-4">Luxury Veneers for a Naturally Flawless Smile</p>
+                    </div>
+                    <p className="text-onyx-gray font-normal text-base xl:text-lg">At Alluna Dental, we don’t believe in “one-size-fits-all” smiles. Using the finest porcelain and advanced 3D technology, we design veneers that are as durable as they are natural. Every detail-from translucency to shape and shade-is customized to your features, ensuring your smile looks flawless, yet completely your own. </p>
+                    <div>
+                        <p className="text-space-blue font-bold text-xl xl:text-[28px] mt-6">Natural, Balanced, and Uniquely Yours</p>
+                        <p className="text-onyx-gray font-normal text-base xl:text-lg pt-3">Every smile we create is custom-crafted to complement your unqiue facial features. From your initial preview with temporaries to the final placement, you’re involved in every step of the process. The result: veneers that look natural, feel balanced, and reflect exactly the smile you invisioned, beautiful and unqiuely yours. </p>
+                    </div>
+                    <div className="flex items-center justify-center gap-4 mt-10 w-max bg-teal-blue rounded-2xl px-8 py-5">
+                        <p className="text-base xl:text-lg font-bold text-white">Step Into Your New Smile</p>
+                        <ArrowRightIcon className="text-white" />
+                    </div>
+                </div>
+            </div>
+            {/* <div className="flex flex-col md:flex-row items-stretch justify-center gap-12 py-24">
+                <div className="md:w-1/2 w-full flex">
+                    <Image
+                        src="/svg/time-offer-section-dentist.svg"
+                        alt="Service Section Background"
+                        width={649}
+                        height={902}
+                        className="object-cover w-full h-full rounded-2xl"
+                    />
+                </div>
+
+                <div className="md:w-1/2 w-full flex flex-col justify-between rounded-2xl">
+                    <div>
+                        <p className="text-space-blue text-lg md:text-xl">
+                            What Sets Our Veneers Apart
+                        </p>
+                        <p className="text-dark font-bold text-2xl md:text-4xl mt-4">
+                            Luxury Veneers for a Naturally Flawless Smile
+                        </p>
+                    </div>
+
                     <p className="text-space-blue text-lg">What Sets Our Veneers Apart</p>
                     <p className="text-dark font-bold text-[40px] mt-2">Luxury Veneers for a Naturally Flawless Smile</p>
                     <p className="text-onyx-gray font-normal text-lg">At Alluna Dental, we don’t believe in “one-size-fits-all” smiles. Using the finest porcelain and advanced 3D technology, we design veneers that are as durable as they are natural. Every detail-from translucency to shape and shade-is customized to your features, ensuring your smile looks flawless, yet completely your own. </p>
@@ -57,8 +93,9 @@ export const TimeOfferSection = () => {
                         <p className="text-lg font-bold text-white">Step Into Your New Smile</p>
                         <ArrowRightIcon className="text-white" />
                     </div>
+
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )
