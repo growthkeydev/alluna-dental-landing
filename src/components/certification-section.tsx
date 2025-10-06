@@ -2,11 +2,11 @@ import { DoubleQoutationIcon } from "@/icons";
 import Image from "next/image";
 
 export const CertificateSection = () => (
-    <div className="px-32 pt-20 flex items-stretch justify-between">
-        <div className="h-[677px] w-[60%] flex flex-col justify-between">
-            <p className="text-space-blue text-lg">The Man Behind the Story</p>
-            <p className="text-dark font-bold text-5xl">Meet Dr. David Cohen</p>
-            <div className="flex gap-4">
+    <div className="md:px-2 px-12 xl:px-24 pt-24 flex items-stretch justify-between gap-6">
+        <div className=" w-[810px] flex flex-col justify-between">
+            <p className="text-space-blue text-base xl:text-lg pt-4">The Man Behind the Story</p>
+            <p className="text-dark font-bold text-3xl xl:text-5xl">Meet Dr. David Cohen</p>
+            <div className="flex gap-4 pt-8">
                 <div>
                     <Image
                         width={92}
@@ -71,35 +71,17 @@ export const CertificateSection = () => (
                     />
                 </div>
             </div>
-
-            <div className="flex items-end justify-between">
-                <div>
-                    <DoubleQoutationIcon />
-                    <p className="text-gray font-normal text-xl  max-w-[245px] mt-5">
-                        Patients come to us worried about pain or results looking fake. I built Alluna Dental to prove that cosmetic dentistry can be comfortable, precise, and beautifully natural</p>
-
-                    <div>
-                        <Image
-                            width={238}
-                            height={87}
-                            src="/svg/sign.svg"
-                            alt="Sign"
-                            className="rounded-3xl"
-                        />
-                    </div>
-                </div>
-                <div>
-                    <Image
-                        width={238}
-                        height={87}
-                        src="/svg/smile.svg"
-                        alt="Smile"
-                        className="rounded-3xl w-full h-full"
-                    />
-                </div>
+            <div>
+                <Image
+                    width={238}
+                    height={87}
+                    src="/svg/certificate-section-sign.svg"
+                    alt="Smile"
+                    className="w-full h-full"
+                />
             </div>
         </div>
-        <div className="h-[677px]">
+        <div className="">
             <Image
                 width={1000}
                 height={1000}
