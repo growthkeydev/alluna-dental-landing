@@ -50,11 +50,11 @@ export const FaqSection = () => {
     }
 
     return (
-        <div className="px-32 pt-20 flex flex-col items-center justify-center">
+        <div className="px-6 md:px-12 xl:px-24 flex flex-col items-center justify-center">
             <p className="text-space-blue text-lg">FAQ</p>
-            <p className="text-dark text-[40px]">Answers to Common Questions</p>
-
-            <div className="mt-12 w-full">
+            <p className="text-dark text-3xl xl:text-[40px] pt-4">Answers to Common Questions</p>
+            <p className="text-dark-gray text-base xl:text-lg pt-3">Everything you need to know about veneers, comfort, and your smile journey with Alluna Dental.</p>
+            <div className="pt-12 w-full">
                 {
                     faqs.map((faq, index) => (
                         <div onClick={() => onSelectFaq(index)} key={index} className={`flex w-full cursor-pointer items-center justify-between border-t border-soft-gray py-8 ${index === faqs.length - 1 ? "border-b" : ""}`}>
@@ -62,7 +62,9 @@ export const FaqSection = () => {
                                 <p className={`${selectedFaq === index ? "font-bold" : "font-normal"} text-deep-midnight  text-xl`}>{faq.question}</p>
                                 <p className={`text-dark-gray font-normal text-lg ${selectedFaq !== index && "hidden"}`}>{faq.answer}</p>
                             </div>
-                            <ChevronIcon />
+                            <div>
+                                <ChevronIcon />
+                            </div>
                         </div>
                     ))
                 }
