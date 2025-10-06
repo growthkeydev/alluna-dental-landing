@@ -30,9 +30,15 @@ export const ExpertSection = () => {
     ]
 
     return (
-        <div className="px-32 pt-20 relative">
-
-            <div className="absolute top-48 left-60">
+        <div className="px-6 md:px-12 xl:px-24 pt-20 relative">
+            <Image
+                width={100}
+                height={100}
+                src="/svg/expert-section.svg"
+                alt="expert-section"
+                className="  w-full"
+            />
+            {/* <div className="">
                 <p className="text-space-blue text-lg ">Expert Insights</p>
                 <p className="text-dark text-[40px] font-bold mt-4">Six Expert Secrets to Veneers You’ll Love for a Lifetime</p>
                 <p className="text-dark-gray text-lg font-normal mt-3">Avoid the common pitfalls of cosmetic dentistry. Learn what truly makes veneers look natural, last long, and feel like your own teeth.</p>
@@ -57,7 +63,7 @@ export const ExpertSection = () => {
                     alt="expert-section"
                     className="  w-full"
                 />
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -28,12 +28,12 @@ export default function Home() {
       <ProtectSection/>
       <CertificateSection/>
       <SmileProofSection/>
-      {/* <ExpertSection/>
+      <ExpertSection/>
       <ProfessionalWorkSection/>
       <FaqSection/>
       <GetInTouchSection/>
       <FooterSection/>
-      <CopyrightSection/> */}
+      <CopyrightSection/>
     </div>
   );
 }
