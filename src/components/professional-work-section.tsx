@@ -31,21 +31,22 @@ export const ProfessionalWorkSection = () => {
         <div
             style={{
                 backgroundImage: "url('/svg/professional-section-background.svg')",
-                backgroundSize: 'center',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 width: '100%',
 
             }}
-            className="px-32 pt-20 pb-72 flex flex-col items-center justify-center">
+            className="px-6 md:px-12 xl:px-24 py-24 flex flex-col items-center justify-center">
 
-            <p className="text-space-blue text-lg">Professional Work</p>
-            <p className="text-dark text-[40px] font-bold">Other Services We Offer</p>
-            <p className="text-dark-gray text-lg font-normal">Tailored veneers designed to enhance your beauty — never fake, always authentic</p>
+            <p className="text-space-blue text-base xl:text-lg">Professional Work</p>
+            <p className="text-dark text-3xl xl:text-[40px] font-bold pt-4">Other Services We Offer</p>
+            <p className="text-dark-gray text-base xl:text-lg font-normal pt-3">Tailored veneers designed to enhance your beauty — never fake, always authentic</p>
 
-            <div className="flex items-center justify-between w-full">
+            <div className="flex items-center justify-between gap-y-4 flex-wrap w-full pt-8">
                 {
                     professionalWork.map((work, index) => (
-                        <div key={index} className="flex flex-col items-start gap-y-4 mt-10">
+                        <div key={index} className="flex flex-col items-start gap-y-4">
                             <div>
                                 <Image
                                     src={work.image}

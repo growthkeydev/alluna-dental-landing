@@ -212,15 +212,14 @@ export const TestimonalSection = () => {
 
             <div className="relative w-full mt-12">
                 <div
-                    className={`absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showLeftShadow ? 'opacity-100' : 'opacity-0'
+                    className={`absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-[#E9F5F6] to-[#E9F5F600] z-10 pointer-events-none transition-opacity duration-300 ${showLeftShadow ? 'opacity-100' : 'opacity-0'
                         }`}
                 />
 
                 <div
-                    className={`absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none transition-opacity duration-300 ${showRightShadow ? 'opacity-100' : 'opacity-0'
+                    className={`absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-[#E9F5F6] to-[#E9F5F600] z-10 pointer-events-none transition-opacity duration-300 ${showRightShadow ? 'opacity-100' : 'opacity-0'
                         }`}
                 />
-
                 <div
                     ref={scrollRef}
                     className="flex gap-10 w-full overflow-x-auto no-scrollbar cursor-grab relative"
