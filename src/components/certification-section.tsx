@@ -1,94 +1,110 @@
+"use client";
 import { DoubleQoutationIcon } from "@/icons";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
-export const CertificateSection = () => (
-    <div className="md:px-2 px-12 xl:px-24 pt-24 flex items-stretch justify-between gap-6">
-        <div className=" w-[810px] flex flex-col justify-between">
-            <p className="text-space-blue text-base xl:text-lg pt-4">The Man Behind the Story</p>
-            <p className="text-dark font-bold text-3xl xl:text-5xl">Meet Dr. David Cohen</p>
-            <div className="flex gap-4 pt-8">
-                <div>
+export const CertificateSection = () => {
+    const certificates = [
+        "/svg/certificate-1.svg",
+        "/svg/certificate-2.svg",
+        "/svg/certificate-3.svg",
+        "/svg/certificate-4.svg",
+        "/svg/certificate-5.svg",
+        "/svg/certificate-6.svg",
+        "/svg/certificate-7.svg",
+    ];
+
+    return (
+        <div className="md:px-2 px-4 xl:px-24 md:pt-24 pt-12 flex items-stretch justify-between gap-6">
+            <div className="w-full md:w-[810px] flex flex-col justify-between">
+                <p className="text-space-blue text-base xl:text-lg pt-4 text-center md:text-left">
+                    The Man Behind the Story
+                </p>
+                <p className="text-dark font-bold text-3xl xl:text-5xl text-center md:text-left">
+                    Meet Dr. David Cohen
+                </p>
+
+                <div className="block md:hidden pt-8">
+                    <Swiper
+                        spaceBetween={12}
+                        slidesPerView={3}
+                        loop
+                    >
+                        {certificates.map((src, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="flex justify-center">
+                                    <Image
+                                        width={92}
+                                        height={92}
+                                        src={src}
+                                        alt={`Certificate ${index + 1}`}
+                                        className="rounded-3xl w-full h-auto"
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+
+                </div>
+
+                <div className="flex items-center justify-between md:hidden pt-14">
                     <Image
-                        width={92}
-                        height={92}
-                        src="/svg/certificate-1.svg"
-                        alt="Certificate 1"
+                        width={1000}
+                        height={1000}
+                        src="/svg/responsive-sign.svg"
+                        alt="sign"
+                        className="rounded-3xl w-[60%] h-auto"
+                    />
+
+                    <DoubleQoutationIcon />
+                </div>
+
+                <div className="flex flex-col md:hidden">
+                    <p className="text-gray text-xl">Patients come to us worried about pain or results looking fake. I built Alluna Dental to prove that cosmetic dentistry can be comfortable, precise, and beautifully natural</p>
+                    <Image
+                        width={1000}
+                        height={1000}
+                        src="/svg/certificate-doctor.svg"
+                        alt="sign"
                         className="rounded-3xl w-full h-full"
                     />
                 </div>
-                <div>
-                    <Image
-                        width={92}
-                        height={92}
-                        src="/svg/certificate-2.svg"
-                        alt="Certificate 2"
-                        className="rounded-3xl w-full h-full"
-                    />
+
+                <div className="hidden md:flex gap-4 pt-8">
+                    {certificates.map((src, index) => (
+                        <div key={index}>
+                            <Image
+                                width={92}
+                                height={92}
+                                src={src}
+                                alt={`Certificate ${index + 1}`}
+                                className="rounded-3xl w-full h-full"
+                            />
+                        </div>
+                    ))}
                 </div>
+
                 <div>
                     <Image
-                        width={92}
-                        height={92}
-                        src="/svg/certificate-3.svg"
-                        alt="Certificate 3"
-                        className="rounded-3xl w-full h-full"
-                    />
-                </div>
-                <div>
-                    <Image
-                        width={92}
-                        height={92}
-                        src="/svg/certificate-4.svg"
-                        alt="Certificate 4"
-                        className="rounded-3xl w-full h-full"
-                    />
-                </div>
-                <div>
-                    <Image
-                        width={92}
-                        height={92}
-                        src="/svg/certificate-5.svg"
-                        alt="Certificate 5"
-                        className="rounded-3xl w-full h-full"
-                    />
-                </div>
-                <div>
-                    <Image
-                        width={92}
-                        height={92}
-                        src="/svg/certificate-6.svg"
-                        alt="Certificate 6"
-                        className="rounded-3xl w-full h-full"
-                    />
-                </div>
-                <div>
-                    <Image
-                        width={92}
-                        height={92}
-                        src="/svg/certificate-7.svg"
-                        alt="Certificate 7"
-                        className="rounded-3xl w-full h-full"
+                        width={238}
+                        height={87}
+                        src="/svg/certificate-section-sign.svg"
+                        alt="Smile"
+                        className="w-full h-full hidden md:block"
                     />
                 </div>
             </div>
-            <div>
+
+            <div className="">
                 <Image
-                    width={238}
-                    height={87}
-                    src="/svg/certificate-section-sign.svg"
-                    alt="Smile"
-                    className="w-full h-full"
+                    width={1000}
+                    height={1000}
+                    src="/svg/certificate-doctor.svg"
+                    alt="Certificate doctor"
+                    className="rounded-3xl w-full h-full hidden md:block"
                 />
             </div>
         </div>
-        <div className="">
-            <Image
-                width={1000}
-                height={1000}
-                src="/svg/certificate-doctor.svg"
-                alt="Certificate doctor"
-                className="rounded-3xl w-full h-full"
-            />
-        </div>
-    </div>
-)
+    );
+};
