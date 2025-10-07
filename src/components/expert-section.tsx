@@ -30,14 +30,49 @@ export const ExpertSection = () => {
     ]
 
     return (
-        <div className="px-6 md:px-12 xl:px-24 pt-20 relative">
+        <div className="md:px-12 xl:px-24 pt-20 relative">
             <Image
                 width={100}
                 height={100}
                 src="/svg/expert-section.svg"
                 alt="expert-section"
-                className="  w-full"
+                className="hidden md:block w-full"
             />
+            <div className="px-4 flex flex-col items-center justify-center md:hidden">
+                <p className="text-space-blue text-lg ">Expert Insights</p>
+                <p className="text-dark text-3xl font-bold mt-4 text-center">Six Expert Secrets to Veneers You’ll Love for a Lifetime</p>
+                <p className="text-dark-gray text-base font-normal mt-3 text-center">Avoid the common pitfalls of cosmetic dentistry. Learn what truly makes veneers look natural, last long, and feel like your own teeth.</p>
+                <div className="mt-8 space-y-6">
+                    {
+                        secrets.map((secret, index) => (
+                            <div key={index}>
+                                <p className="text-dark text-xl font-bold pb-3">{secret.title}</p>
+                                <p className="text-space-blue text-sm font-normal">{secret.description}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+
+
+            </div>
+            <Image
+                width={100}
+                height={100}
+                src="/svg/expert-section-responsive.svg"
+                alt="expert-section"
+                className="block md:hidden w-full mt-8"
+            />
+            {/* <div className="grid grid-cols-2 gap-y-8 gap-x-7 mt-8 ">
+                {
+                    secrets.map((secret, index) => (
+                        <div key={index} className="space-y-3 max-w-[507px]">
+                            <p className="text-dark text-xl font-bold">{secret.title}</p>
+                            <p className="text-space-blue text-sm font-normal">{secret.description}</p>
+                        </div>
+                    ))
+                }
+
+            </div> */}
             {/* <div className="">
                 <p className="text-space-blue text-lg ">Expert Insights</p>
                 <p className="text-dark text-[40px] font-bold mt-4">Six Expert Secrets to Veneers You’ll Love for a Lifetime</p>

@@ -37,17 +37,17 @@ export const ProfessionalWorkSection = () => {
                 width: '100%',
 
             }}
-            className="px-6 md:px-12 xl:px-24 py-24 flex flex-col items-center justify-center">
+            className="px-4 md:px-12 xl:px-24 md:py-24 py-12 flex flex-col items-center justify-center">
 
             <p className="text-space-blue text-base xl:text-lg">Professional Work</p>
             <p className="text-dark text-3xl xl:text-[40px] font-bold pt-4">Other Services We Offer</p>
-            <p className="text-dark-gray text-base xl:text-lg font-normal pt-3">Tailored veneers designed to enhance your beauty — never fake, always authentic</p>
+            <p className="text-dark-gray text-base xl:text-lg font-normal pt-3 text-center md:text-left">Tailored veneers designed to enhance your beauty — never fake, always authentic</p>
 
-            <div className="flex items-center justify-between gap-y-4 flex-wrap w-full pt-8">
+            <div className="flex md:flex-row flex-col items-center md:justify-between gap-y-4 md:flex-wrap w-full pt-8">
                 {
                     professionalWork.map((work, index) => (
-                        <div key={index} className="flex flex-col items-start gap-y-4">
-                            <div>
+                        <div key={index} className="flex flex-col items-center md:items-start gap-y-4 w-full md:w-auto">
+                            
                                 <Image
                                     src={work.image}
                                     alt="Professional Work Image"
@@ -55,15 +55,15 @@ export const ProfessionalWorkSection = () => {
                                     height={400}
                                     className="w-full"
                                 />
-                            </div>
+                            
                             <p className="text-dark text-xl font-bold">{work.title}</p>
-                            <p className="text-space-blue text-sm font-normal max-w-[301px]">{work.description}</p>
+                            <p className="text-space-blue text-sm font-normal max-w-[301px] text-center md:text-left">{work.description}</p>
                         </div>
                     ))
                 }
             </div>
-            <div className="flex items-center justify-center gap-4 w-max mt-12 bg-teal-blue rounded-2xl px-8 py-5">
-                <p className="text-lg font-bold text-white">Get Your Free Quote</p>
+            <div className="flex items-center justify-center gap-4 w-full md:w-max mt-12 bg-teal-blue rounded-2xl px-8 py-5">
+                <p className="text-lg font-medium md:font-bold text-white">Get Your Free Quote</p>
                 <ArrowRightIcon className="text-white" />
             </div>
         </div>
