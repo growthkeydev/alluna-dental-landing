@@ -44,7 +44,7 @@ export const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className="md:hidden gap-2 border-2 border-blue md:rounded-2xl px-4 py-5">
+                <div className="md:hidden gap-2 border-2 border-blue rounded-2xl px-4 py-5">
                     <p className="text-blue text-base text-nowrap font-semibold">Get a Free Quote</p>
                 </div>
             </div>
@@ -67,16 +67,23 @@ export const HeroSection = () => {
                         <ArrowRightIcon className="text-white" />
                     </div>
                 </div>
-                <div className="absolute bottom-0 right-0 flex justify-end items-end w-full h-full pointer-events-none">
-                    <div className="relative w-[60%] lg:w-[65%] xl:w-[60%] 2xl:w-[55%] max-h-[94%] min-w-[300px] aspect-[1/1] md:aspect-[4/5]">
+                <div className="absolute bottom-0 right-0 flex justify-end items-end w-full h-[40vh] md:h-full pointer-events-none">
+                    <div className="relative hidden md:block w-[60%] lg:w-[65%] xl:w-[60%] 2xl:w-[55%] max-h-[94%] min-w-[300px] aspect-[1/1] md:aspect-[4/5]">
                         <Image
                             src="/svg/hero-section-smile.svg"
                             alt="Hero Section Image"
                             fill
-                            className="object-contain object-bottom"
+                            className="object-contain object-bottom "
                             priority
                         />
                     </div>
+                    <Image
+                        src="/svg/hero-section-responsive.svg"
+                        alt="Hero Section Image"
+                        width={500}
+                        height={500}
+                        className="object-contain object-bottom block md:hidden h-full"
+                    />
                 </div>
                 <div className="bg-white p-3 2xl:p-5 rounded-3xl w-max hidden md:flex flex-col items-center justify-center absolute right-12 xl:right-24 bottom-6 2xl:bottom-28">
                     <Image
@@ -91,6 +98,7 @@ export const HeroSection = () => {
                     <p className="text-blue-gray text-sm ">Last Season</p>
                 </div>
             </div>
+            
         </div>
     )
 }
