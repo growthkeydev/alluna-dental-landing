@@ -38,13 +38,13 @@ export const HeroSection = () => {
                         <p className="text-dark text-lg xl:text-xl font-semibold text-nowrap">+1 818 980 3333</p>
                     </div>
 
-                    <div className="flex items-center gap-2 border-2 border-blue rounded-2xl px-4 py-3">
+                    <div className="flex items-center gap-2 border-2 border-blue md:rounded-2xl px-4 py-3">
                         <p className="text-blue text-base xl:text-lg font-semibold text-nowrap">Schedule free consultation</p>
                         <ArrowRightIcon className="text-blue" />
                     </div>
                 </div>
 
-                <div className="md:hidden gap-2 border-2 border-blue rounded-2xl px-4 py-5">
+                <div className="md:hidden gap-2 border-2 border-blue md:rounded-2xl px-4 py-5">
                     <p className="text-blue text-base text-nowrap font-semibold">Get a Free Quote</p>
                 </div>
             </div>
@@ -62,7 +62,7 @@ export const HeroSection = () => {
                         <p className="text-lg font-bold text-white">Begin Your Smile Journey</p>
                         <ArrowRightIcon className="text-white" />
                     </div>
-                    <div className=" md:hidden flex items-center justify-center gap-[10px] mt-14 w-max bg-space-blue rounded-2xl px-8 py-5">
+                    <div className=" md:hidden flex items-center justify-center gap-[10px] mt-14 w-max bg-space-blue md:rounded-2xl px-8 py-5">
                         <p className="text-lg font-bold text-white">Schedule Your Free Consultation</p>
                         <ArrowRightIcon className="text-white" />
                     </div>

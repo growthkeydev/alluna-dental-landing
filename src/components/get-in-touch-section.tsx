@@ -4,16 +4,24 @@ import { LocationIcon } from "@/icons/location";
 import Image from "next/image";
 
 export const GetInTouchSection = () => (
-    <div className="mt-20 relative"
+    <div className="pt-20 md:relative"
+        style={{
+            backgroundImage: "url('/svg/map.svg')",
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            width: '100%',
+            height: '100vh',
+        }}
     >
-        <Image
+        {/* <Image
             width={1000}
             height={1000}
             src="/svg/map.svg"
             alt="Get In Touch Section Background"
-            className="w-full h-[871px] object-cover"
-        />
-        <div className="bg-white p-6 xl:p-12 rounded-3xl absolute top-40 left-11  w-max h-max">
+            className="w-full h-[871px] object-cover hidden md:block"
+        /> */}
+        <div className="bg-white p-6 xl:p-12 rounded-3xl md:absolute md:top-40 md:left-11 md:w-max h-max mx-4 md:mx-0">
             <p className="text-space-blue text-lg">Get in Touch</p>
             <p className="text-dark text-bold text-2xl xl:text-[40px] py-4">Get A Free Professional <br /> Consultation Session</p>
 
@@ -29,7 +37,7 @@ export const GetInTouchSection = () => (
                 <LocationIcon />
                 <p className="text-dark text-base font-normal">4233 Coldwater Canyon Ave. Studio City, CA 91604</p>
             </div>
-            <div className="flex items-center justify-center gap-[10px] w-max bg-space-blue rounded-2xl px-8 py-3 xl:py-5">
+            <div className="flex items-center justify-center gap-[10px] w-max bg-space-blue md:rounded-2xl px-8 py-3 xl:py-5">
                 <p className="text-base xl:text-lg font-bold text-white">Book Your Free Consultation</p>
                 <ArrowRightIcon className="text-white" />
             </div>

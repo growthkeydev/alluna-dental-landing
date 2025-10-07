@@ -77,12 +77,12 @@ export const ExperienceSection = () => {
                 <p className="block md:hidden font-normal text-base xl:text-lg text-white pt-4">5-Star Reviews & Recognitions</p>
             </div>
 
-            <div className="hidden md:flex items-center justify-center gap-4 mt-16 w-max bg-white rounded-2xl px-8 py-5 mb-28">
+            <div className="hidden md:flex items-center justify-center gap-4 mt-16 w-max bg-white md:rounded-2xl px-8 py-5 mb-28">
                 <p className="text-base xl:text-lg font-bold text-space-blue">Join 780+ Patients Who Already Transformed Their Smiles</p>
                 <ArrowRightIcon className="text-space-blue" />
             </div>
 
-             <div className="flex md:hidden items-center justify-center gap-4 mt-16 w-full bg-white rounded-2xl px-8 py-5 mb-28">
+             <div className="flex md:hidden items-center justify-center gap-4 mt-16 w-full bg-white md:rounded-2xl px-8 py-5 mb-28">
                 <p className="text-base xl:text-lg font-medium text-space-blue">Join 780+ Patients </p>
                 <ArrowRightIcon className="text-space-blue" />
             </div>
