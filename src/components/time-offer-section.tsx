@@ -48,8 +48,8 @@ export const TimeOfferSection = () => {
                 </div>
             </div>
 
-            <div className="flex flex-row items-stretch justify-center gap-12 py-24">
-                <div className="w-1/2 flex">
+            <div className="flex flex-col items-center md:flex-row md:items-stretch md:justify-center gap-6 md:gap-12 py-24 px-4 md:px-0">
+                <div className="w-full md:w-1/2 flex">
                     <Image
                         width={636}
                         height={618}
@@ -58,7 +58,7 @@ export const TimeOfferSection = () => {
                         className="object-cover w-full h-full rounded-2xl"
                     />
                 </div>
-                <div className="w-1/2 flex flex-col justify-between">
+                <div className="md:w-1/2 flex flex-col justify-between">
                     <div>
                         <p className="text-space-blue text-lg">What Sets Our Veneers Apart</p>
                         <p className="text-dark font-bold text-3xl xl:text-[40px] py-4">Luxury Veneers for a Naturally Flawless Smile</p>
@@ -68,8 +68,8 @@ export const TimeOfferSection = () => {
                         <p className="text-space-blue font-bold text-xl xl:text-[28px] mt-6">Natural, Balanced, and Uniquely Yours</p>
                         <p className="text-onyx-gray font-normal text-base xl:text-lg pt-3">Every smile we create is custom-crafted to complement your unqiue facial features. From your initial preview with temporaries to the final placement, you’re involved in every step of the process. The result: veneers that look natural, feel balanced, and reflect exactly the smile you invisioned, beautiful and unqiuely yours. </p>
                     </div>
-                    <div className="flex items-center justify-center gap-4 mt-10 w-max bg-teal-blue rounded-2xl px-8 py-5">
-                        <p className="text-base xl:text-lg font-bold text-white">Step Into Your New Smile</p>
+                    <div className="flex items-center justify-center gap-4 mt-10 w-full md:w-max bg-teal-blue rounded-2xl px-8 py-5">
+                        <p className="text-base xl:text-lg font-medium md:font-bold text-white">Step Into Your New Smile</p>
                         <ArrowRightIcon className="text-white" />
                     </div>
                 </div>
