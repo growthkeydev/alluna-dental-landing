@@ -16,7 +16,7 @@ export const HeroSection = () => {
                 height: '100vh',
                 // borderRadius: '0 0 250px 250px',
             }}
-            className="md:px-2 px-12 xl:px-24 relative rounded-[0_0_20%_20%] overflow-hidden"
+            className="md:px-2 px-4 xl:px-24 relative rounded-[0_0_20%_20%] overflow-hidden"
         >
             <div className="pt-6 flex items-center justify-between ">
                 <div className="flex items-center gap-10">
@@ -27,12 +27,12 @@ export const HeroSection = () => {
                         height={50}
 
                     />
-                    <Link href="#" className="text-base font-semibold text-dark text-nowrap">About Us</Link>
-                    <Link href="#" className="text-base font-semibold text-dark">Veneers</Link>
-                    <Link href="#" className="text-base font-semibold text-dark text-nowrap">Before & After</Link>
+                    <Link href="#" className="hidden md:block text-base font-semibold text-dark text-nowrap">About Us</Link>
+                    <Link href="#" className="hidden md:block text-base font-semibold text-dark">Veneers</Link>
+                    <Link href="#" className="hidden md:block text-base font-semibold text-dark text-nowrap">Before & After</Link>
                 </div>
 
-                <div className="flex items-center gap-3 xl:gap-6">
+                <div className="hidden md:flex items-center gap-3 xl:gap-6">
                     <div className="flex items-center gap-2 ">
                         <PhoneIcon />
                         <p className="text-dark text-lg xl:text-xl font-semibold text-nowrap">+1 818 980 3333</p>
@@ -43,19 +43,27 @@ export const HeroSection = () => {
                         <ArrowRightIcon className="text-blue" />
                     </div>
                 </div>
+
+                <div className="md:hidden gap-2 border-2 border-blue rounded-2xl px-4 py-5">
+                    <p className="text-blue text-base text-nowrap font-semibold">Get a Free Quote</p>
+                </div>
             </div>
 
             <div className="mt-12 2xl:mt-24">
-                <div className="">
+                <div className="flex flex-col items-center justify-center md:block">
                     <div className="bg-white rounded-full px-5 py-1 flex items-center justify-center gap-2 w-max">
                         <div className="w-2 h-2 bg-teal-blue rounded-full"></div>
                         <p className="text-space-blue font-bold text-lg">Award Winning Veneers </p>
                     </div>
 
-                    <p className="font-bold text-4xl 2xl:text-[64px] text-white pt-10">A Natural, <br />Confident Smile <br />Designed Just for You</p>
-                    <p className="font-bold text-xl 2xl:text-2xl text-white pt-6">From Studio City to Beverly Hills, see why hundreds of <br />patients choose Alluna Dental for natural results, luxury <br />comfort, and world-class smile makeovers.</p>
-                    <div className="flex items-center justify-center gap-[10px] mt-14 w-max bg-space-blue rounded-2xl px-8 py-5">
+                    <p className="font-bold text-4xl 2xl:text-[64px] text-white pt-10 text-center md:text-left">A Natural, <br />Confident Smile <br />Designed Just for You</p>
+                    <p className="font-bold text-xl 2xl:text-2xl text-white pt-6 hidden md:block">From Studio City to Beverly Hills, see why hundreds of <br />patients choose Alluna Dental for natural results, luxury <br />comfort, and world-class smile makeovers.</p>
+                    <div className="hidden md:flex items-center justify-center gap-[10px] mt-14 w-max bg-space-blue rounded-2xl px-8 py-5">
                         <p className="text-lg font-bold text-white">Begin Your Smile Journey</p>
+                        <ArrowRightIcon className="text-white" />
+                    </div>
+                    <div className=" md:hidden flex items-center justify-center gap-[10px] mt-14 w-max bg-space-blue rounded-2xl px-8 py-5">
+                        <p className="text-lg font-bold text-white">Schedule Your Free Consultation</p>
                         <ArrowRightIcon className="text-white" />
                     </div>
                 </div>
@@ -70,7 +78,7 @@ export const HeroSection = () => {
                         />
                     </div>
                 </div>
-                <div className="bg-white p-3 2xl:p-5 rounded-3xl w-max flex flex-col items-center justify-center absolute right-12 xl:right-24 bottom-6 2xl:bottom-28">
+                <div className="bg-white p-3 2xl:p-5 rounded-3xl w-max hidden md:flex flex-col items-center justify-center absolute right-12 xl:right-24 bottom-6 2xl:bottom-28">
                     <Image
                         src="/svg/tooth.svg"
                         alt="Tooth Image"

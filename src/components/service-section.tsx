@@ -42,19 +42,19 @@ export const ServiceSection = () => {
           />
         </div>
 
-        <div className="md:w-1/2 w-full flex flex-col justify-between rounded-2xl">
+        <div className="md:w-1/2 w-full flex flex-col justify-between rounded-2xl pt-8 md:pt-0">
           <div>
-            <p className="text-space-blue text-lg md:text-xl">
+            <p className="text-space-blue text-lg text-center md:text-left md:text-xl">
               Welcome To Alluna Dental
             </p>
-            <p className="text-dark font-bold text-2xl md:text-4xl mt-4 pb-9">
+            <p className="text-dark font-bold text-2xl text-center md:text-left md:text-4xl mt-4 pb-9">
               The New Face of Cosmetic Dentistry in Studio City
             </p>
           </div>
 
             {services.map((service, index) => (
-              <div key={index}>
-                <div className={`flex items-center gap-2 ${index !==0 && "mt-8"}`}>
+              <div key={index} className="flex flex-col items-center md:block">
+                <div className={`flex items-center  gap-2 ${index !==0 && "mt-8"}`}>
                   {service.icon}
                   <p className="text-gray text-base font-semibold">
                     {service.title}

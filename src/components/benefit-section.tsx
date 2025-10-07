@@ -27,14 +27,14 @@ export const BenefitSection = () => {
 
     return (
         <div
-            style={{
-                backgroundImage: `url('/svg/testimonal-section-background.svg')`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-            }}
-            className="md:px-2 px-12 xl:px-24 pt-24 pb-32 flex items-center justify-center flex-col">
+            className="
+                md:bg-[url('/svg/testimonal-section-background.svg')]
+                md:bg-cover md:bg-no-repeat
+                md:px-2 px-4 xl:px-24 pt-24 pb-32
+                flex items-center justify-center flex-col
+            ">
             <p className="text-lg">Key Benefits</p>
-            <p className="text-dark pt-4 font-bold text-4xl 2xl:text-[40px]">Why Choose Alluna Dental?</p>
+            <p className="text-dark pt-4 font-bold text-4xl 2xl:text-[40px] text-center md:text-left">Why Choose Alluna Dental?</p>
 
             <div className="flex flex-row flex-wrap justify-center space-y-3 py-14">
                 {
@@ -48,8 +48,8 @@ export const BenefitSection = () => {
                 }
             </div>
 
-            <div className="flex items-center justify-center gap-4 w-max bg-teal-blue rounded-2xl px-8 py-5">
-                <p className="text-lg font-bold text-white">Make Appointment</p>
+            <div className="flex items-center justify-center gap-4 w-full md:w-max bg-teal-blue rounded-2xl px-8 py-5">
+                <p className="text-lg font-medium md:font-bold text-white">Make Appointment</p>
                 <ArrowRightIcon className="text-white" />
             </div>
         </div>

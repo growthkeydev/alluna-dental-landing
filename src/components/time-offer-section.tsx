@@ -10,18 +10,18 @@ export const TimeOfferSection = () => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
             }}
-            className="md:px-2 px-12 xl:px-24"
+            className="md:px-2 xl:px-24"
         >
 
-            <div className="relative bg-gradient-to-r from-teal-blue to-dusty-rose h-full w-full rounded-3xl grid grid-cols-2 md:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-7 py-16 justify-center">
+            <div className="relative bg-gradient-to-r from-teal-blue to-dusty-rose h-full w-full md:rounded-3xl md:grid grid-cols-2 md:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-7 py-16 justify-center">
                 <Image
                     width={394}
                     height={474}
                     src="/svg/time-section-person.svg"
                     alt="Time Offer Section Background"
-                    className="absolute left-0 bottom-0 rounded-bl-2xl"
+                    className="hidden md:block absolute left-0 bottom-0 rounded-bl-2xl"
                 />
-                <div className="flex flex-col items-start text-left col-start-2 md:col-start-4 md:col-span-2 xl:col-start-3 xl:col-span-2 2xl:col-start-4 2xl:col-span-3">
+                <div className="hidden md:flex flex-col items-start text-left col-start-2 md:col-start-4 md:col-span-2 xl:col-start-3 xl:col-span-2 2xl:col-start-4 2xl:col-span-3">
                     <p className="text-white font-bold text-3xl xl:text-[40px] ">Limited-Time Offer</p>
                     <p className="text-white font-normal text-base xl:text-lg py-4">
                         Transform Your Smile with 3D Printed Veneers — Just $7,500 for a Full Upper Set.
@@ -29,6 +29,19 @@ export const TimeOfferSection = () => {
                     </p>
 
                     <div className="flex items-center justify-center gap-4 w-max bg-white rounded-2xl px-8 py-5 cursor-pointer">
+                        <p className="text-base xl:text-lg font-bold text-teal-blue">Get Your Free Quote Now</p>
+                        <ArrowRightIcon className="text-teal-blue" />
+                    </div>
+                </div>
+
+                 <div className="md:hidden flex flex-col items-center justify-center w-full px-4">
+                    <p className="text-white font-bold text-3xl">Limited-Time Offer</p>
+                    <p className="text-white font-normal text-base  py-4">
+                        Transform Your Smile with 3D Printed Veneers — Just $7,500 for a Full Upper Set.
+                        Book Today and Lock In Your Price.
+                    </p>
+
+                    <div className="flex items-center justify-center gap-4 w-full  bg-white rounded-2xl px-8 py-5 cursor-pointer">
                         <p className="text-base xl:text-lg font-bold text-teal-blue">Get Your Free Quote Now</p>
                         <ArrowRightIcon className="text-teal-blue" />
                     </div>
