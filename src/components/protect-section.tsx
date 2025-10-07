@@ -23,8 +23,8 @@ export const ProtectSection = () => {
     ]
 
     return (
-        <div className="md:px-2 px-12 xl:px-24 flex items-stretch justify-center gap-10 pt-16">
-            <div className="w-[50%] flex flex-col justify-between">
+        <div className="md:px-2 px-4 xl:px-24 flex flex-col md:flex-row items-stretch justify-center gap-10 pt-16">
+            <div className="w-full md:w-[50%] flex flex-col justify-between">
                 <p className="text-black text-2xl font-semibold">Here’s how to protect your investment:</p>
                 <div className="space-y-5 bg-gradient-to-r from-teal-blue-5 to-teal-blue-15 rounded-2xl px-3 pb-6 mt-6">
                     {
@@ -47,17 +47,25 @@ export const ProtectSection = () => {
 
             </div>
 
-            <div className="w-[50%] flex flex-col justify-between">
-                <p className="text-space-blue text-base xl:text-lg">Your Smile is Built to Last - With the Right Care</p>
-                <p className="text-dark font-bold text-4xl 2xl:text-[40px] py-4">Protecting Your Investment</p>
-                <p className="text-gray text-base xl:text-lg pb-12">Your veneers are designed to last 10–20 years when cared for properly. At Alluna Dental, we make sure you leave with more than just a new smile—you leave with the knowledge, tools, and support to keep it looking flawless.</p>
+            <div className="w-full md:w-[50%] flex flex-col justify-between">
+                <p className="text-space-blue text-base xl:text-lg text-center md:text-left">Your Smile is Built to Last - With the Right Care</p>
+                <p className="text-dark font-bold text-4xl 2xl:text-[40px] py-4 text-center md:text-left">Protecting Your Investment</p>
+                <p className="text-gray text-base xl:text-lg pb-12 text-center md:text-left">Your veneers are designed to last 10–20 years when cared for properly. At Alluna Dental, we make sure you leave with more than just a new smile—you leave with the knowledge, tools, and support to keep it looking flawless.</p>
 
                 <Image
                     width={796}
                     height={400}
                     alt="mouth"
                     src="/svg/mouth.svg"
-                    className="rounded-2xl object-cover w-full h-full"
+                    className="rounded-2xl object-cover w-full h-full hidden md:block"
+                />
+
+                <Image
+                    width={796}
+                    height={400}
+                    alt="mouth"
+                    src="/svg/protection-section-responsive.svg"
+                    className="rounded-2xl object-cover w-full h-full block md:hidden"
                 />
 
             </div>
