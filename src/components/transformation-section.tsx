@@ -52,21 +52,29 @@ export const TransformationSection = () => {
 
     return (
         <div
-            style={{
-                backgroundImage: `url('/svg/testimonal-section-background.svg')`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-            }}
-            className="md:px-2 px-12 xl:px-24 pt-24 flex flex-col items-center justify-center ">
+            className="
+                md:bg-[url('/svg/testimonal-section-background.svg')]
+                md:bg-cover md:bg-no-repeat
+               md:px-2 px-4 xl:px-24 pt-12 md:pt-24 flex flex-col items-center justify-center
+            "
+        >
             <Image
                 width={1000}
                 height={1000}
                 src="/svg/transformation-section-header.svg"
                 alt="Transformation Section"
-                className="w-full"
+                className="hidden md:block w-full"
             />
 
-            <div className="grid grid-cols-2 gap-x-5 gap-y-8 w-full py-14 pb-20">
+            <Image
+                width={1000}
+                height={1000}
+                src="/svg/transformation-section-responsive.svg"
+                alt="Transformation Section"
+                className="block md:hidden w-full"
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-8 w-full py-14 pb-20">
                 {
                     transformations.map((item, index) => (
                         <div key={index} className="flex items-start">
