@@ -1,5 +1,5 @@
 export const CopyrightSection = () => (
-    <div className="flex items-center justify-between bg-ice-mist px-32 py-6">
+    <div className="flex items-center justify-between bg-ice-mist px-6 md:px-12 xl:px-24 py-6">
         <div className="flex items-center gap-2.5 text-sm text-dark font-normal">
             <p>Copyright © 2025 Alluna Dental</p>
             <div className="h-2.5 w-[1px] bg-dark"></div>

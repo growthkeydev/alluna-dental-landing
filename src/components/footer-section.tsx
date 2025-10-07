@@ -4,8 +4,8 @@ import { LocationIcon } from "@/icons/location";
 import Image from "next/image";
 
 export const FooterSection = () => (
-    <div className="px-32 flex items-start justify-between pt-8 pb-10 bg-white">
-        <div className="w-[40%]">
+    <div className="px-6 md:px-12 xl:px-24 flex items-start justify-between gap-5 pt-8 pb-10 bg-white">
+        <div className="w-[50%] xl:w-[40%]">
             <Image
                 width={100}
                 height={100}
@@ -31,11 +31,11 @@ export const FooterSection = () => (
             <p className="text-space-blue font-semibold text-2xl">Content</p>
 
 
-            <p className="text-space-blue font-normal text-base pt-8">About Us</p>
+            <p className="text-space-blue font-normal text-base pt-8 whitespace-nowrap">About Us</p>
 
             <p className="text-space-blue font-normal text-base py-5">Veneers</p>
 
-            <p className="text-space-blue font-normal text-base">Before & After</p>
+            <p className="text-space-blue font-normal text-base whitespace-nowrap">Before & After</p>
 
         </div>
         <div className="pl-16">
