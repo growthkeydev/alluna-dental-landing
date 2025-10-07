@@ -3,6 +3,8 @@ import { DoubleQoutationIcon } from "@/icons";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 export const CertificateSection = () => {
     const certificates = [
@@ -25,11 +27,13 @@ export const CertificateSection = () => {
                     Meet Dr. David Cohen
                 </p>
 
-                <div className="block md:hidden pt-8">
+                <div className="block md:hidden pt-8 ">
                     <Swiper
                         spaceBetween={12}
                         slidesPerView={3}
-                        loop
+                        pagination={{ clickable: true }}
+                        modules={[Pagination]}
+                        className="custom-dots "
                     >
                         {certificates.map((src, index) => (
                             <SwiperSlide key={index}>
@@ -39,7 +43,7 @@ export const CertificateSection = () => {
                                         height={92}
                                         src={src}
                                         alt={`Certificate ${index + 1}`}
-                                        className="rounded-3xl w-full h-auto"
+                                        className="rounded-3xl pb-14"
                                     />
                                 </div>
                             </SwiperSlide>
