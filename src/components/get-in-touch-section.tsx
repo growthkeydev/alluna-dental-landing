@@ -37,7 +37,7 @@ export const GetInTouchSection = () => (
                 <LocationIcon />
                 <p className="text-dark text-base font-normal">4233 Coldwater Canyon Ave. Studio City, CA 91604</p>
             </div>
-            <div className="flex items-center justify-center gap-[10px] w-max bg-space-blue md:rounded-2xl px-8 py-3 xl:py-5">
+            <div className="flex items-center justify-center gap-[10px] w-full md:w-max bg-space-blue rounded-2xl md:rounded-2xl pr-[34px] pl-10 md:px-8 py-5">
                 <p className="text-base xl:text-lg font-bold text-white">Book Your Free Consultation</p>
                 <ArrowRightIcon className="text-white" />
             </div>

@@ -48,7 +48,7 @@ export const BenefitSection = () => {
                 }
             </div>
 
-            <div className="flex items-center justify-center gap-4 w-full md:w-max bg-teal-blue md:rounded-2xl px-8 py-5">
+            <div className="flex items-center justify-center gap-4 w-full md:w-max bg-teal-blue rounded-2xl md:rounded-2xl pr-[34px] pl-10 md:px-8 py-5">
                 <p className="text-lg font-medium md:font-bold text-white">Make Appointment</p>
                 <ArrowRightIcon className="text-white" />
             </div>

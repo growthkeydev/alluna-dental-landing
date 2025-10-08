@@ -82,7 +82,7 @@ export const ExperienceSection = () => {
                 <ArrowRightIcon className="text-space-blue" />
             </div>
 
-             <div className="flex md:hidden items-center justify-center gap-4 mt-16 w-full bg-white md:rounded-2xl px-8 py-5 mb-28">
+             <div className="flex md:hidden items-center justify-center gap-4 mt-16 w-full bg-white rounded-2xl md:rounded-2xl pr-[34px] pl-10 md:px-8 py-5 mb-28">
                 <p className="text-base xl:text-lg font-medium text-space-blue">Join 780+ Patients </p>
                 <ArrowRightIcon className="text-space-blue" />
             </div>

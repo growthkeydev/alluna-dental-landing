@@ -62,7 +62,7 @@ export const HeroSection = () => {
                         <p className="text-lg font-bold text-white">Begin Your Smile Journey</p>
                         <ArrowRightIcon className="text-white" />
                     </div>
-                    <div className=" md:hidden flex items-center justify-center gap-[10px] mt-14 w-max bg-space-blue md:rounded-2xl px-8 py-5">
+                    <div className=" md:hidden flex items-center justify-center gap-[10px] mt-14 w-max bg-space-blue rounded-2xl md:rounded-2xl pr-[34px] pl-10 md:px-8 py-5">
                         <p className="text-lg font-bold text-white">Schedule Your Free Consultation</p>
                         <ArrowRightIcon className="text-white" />
                     </div>

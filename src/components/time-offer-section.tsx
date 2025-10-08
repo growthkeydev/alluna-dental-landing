@@ -41,7 +41,7 @@ export const TimeOfferSection = () => {
                         Book Today and Lock In Your Price.
                     </p>
 
-                    <div className="flex items-center justify-center gap-4 w-full  bg-white md:rounded-2xl px-8 py-5 cursor-pointer">
+                    <div className="flex items-center justify-center gap-4 w-full  bg-white rounded-2xl md:rounded-2xl pr-[34px] pl-10 md:px-8 py-5 cursor-pointer">
                         <p className="text-base xl:text-lg font-bold text-teal-blue">Get Your Free Quote Now</p>
                         <ArrowRightIcon className="text-teal-blue" />
                     </div>
@@ -68,7 +68,7 @@ export const TimeOfferSection = () => {
                         <p className="text-space-blue font-bold text-xl xl:text-[28px] mt-6">Natural, Balanced, and Uniquely Yours</p>
                         <p className="text-onyx-gray font-normal text-base xl:text-lg pt-3">Every smile we create is custom-crafted to complement your unqiue facial features. From your initial preview with temporaries to the final placement, you’re involved in every step of the process. The result: veneers that look natural, feel balanced, and reflect exactly the smile you invisioned, beautiful and unqiuely yours. </p>
                     </div>
-                    <div className="flex items-center justify-center gap-4 mt-10 w-full md:w-max bg-teal-blue md:rounded-2xl px-8 py-5">
+                    <div className="flex items-center justify-center gap-4 mt-10 w-full md:w-max bg-teal-blue rounded-2xl md:rounded-2xl pr-[34px] pl-10 md:px-8 py-5">
                         <p className="text-base xl:text-lg font-medium md:font-bold text-white">Step Into Your New Smile</p>
                         <ArrowRightIcon className="text-white" />
                     </div>

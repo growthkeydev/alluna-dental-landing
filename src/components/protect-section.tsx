@@ -40,7 +40,7 @@ export const ProtectSection = () => {
                     }
                 </div>
                 <p className="text-gray text-base xl:text-lg font-normal pt-8">When you take care of your veneers, they’ll take care of you—keeping your smile natural, radiant, and confident for decades.</p>
-                <div className="flex items-center justify-center gap-4 mt-6 w-full bg-teal-blue md:rounded-2xl py-5">
+                <div className="flex items-center justify-center gap-4 mt-6 w-full bg-teal-blue rounded-2xl md:rounded-2xl pr-[34px] pl-10 md:px-8 py-5">
                     <p className="text-base xl:text-lg font-normal text-white">Keep My Smile Looking Its Best</p>
                     <ArrowRightIcon className="text-white" />
                 </div>
