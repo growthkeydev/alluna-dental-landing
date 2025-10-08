@@ -36,10 +36,10 @@ export const BenefitSection = () => {
             <p className="text-lg">Key Benefits</p>
             <p className="text-dark pt-4 font-bold text-4xl 2xl:text-[40px] text-center md:text-left">Why Choose Alluna Dental?</p>
 
-            <div className="flex flex-row flex-wrap justify-center space-y-3 py-14">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 xl:flex xl:flex-row xl:justify-center space-y-3 py-14">
                 {
                     benefits.map((benefit, index) => (
-                        <div key={index} className="flex flex-col items-center gap-5 w-[330px] text-center">
+                        <div key={index} className="flex flex-col items-center gap-5 max-w-[330px] text-center">
                             {benefit.icon}
                             <p className="text-dark font-semibold text-xl 2xl:text-[28px]">{benefit.title}</p>
                             <p className="text-arsenic text-lg font-normal">{benefit.description}</p>
