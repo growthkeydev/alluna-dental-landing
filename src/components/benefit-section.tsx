@@ -30,7 +30,7 @@ export const BenefitSection = () => {
             className="
                 md:bg-[url('/svg/testimonal-section-background.svg')]
                 md:bg-cover md:bg-no-repeat
-                md:px-2 px-4 xl:px-24 pt-24 pb-32
+                md:px-2 px-4 xl:px-24 md:pt-24 pb-32
                 flex items-center justify-center flex-col
             ">
             <p className="text-lg">Key Benefits</p>

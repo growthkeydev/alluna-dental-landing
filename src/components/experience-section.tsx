@@ -28,15 +28,13 @@ export const ExperienceSection = () => {
             }}
             className="px-4 md:px-12 xl:px-24 relative  flex flex-col items-center justify-center mt-12 md:mt-40"
         >
-            <div>
-                <Image
-                    width={394}
-                    height={474}
-                    src="/svg/experience-section-patient.svg"
-                    alt="Experience Section Background"
-                    className="hidden md:block w-full h-[600px]"
-                />
-            </div>
+            <Image
+                width={394}
+                height={474}
+                src="/svg/experience-section-patient.svg"
+                alt="Experience Section Background"
+                className="hidden md:block w-full"
+            />
             <Image
                 width={394}
                 height={474}
@@ -44,7 +42,7 @@ export const ExperienceSection = () => {
                 alt="Experience Section Background"
                 className="block md:hidden w-full"
             />
-            <div className="flex flex-col gap-6 md:gap-0 md:flex-row items-center justify-between pt-8 md:pt-16 text-center md:text-left">
+            <div className="flex flex-col gap-6 md:gap-0 md:flex-row items-center justify-between pt-8 xl:pt-16 text-center md:text-left">
                 <p className="text-white font-bold text-3xl xl:text-[46px] md:max-w-[520px] md:w-1/2">Proven Experience in Smile Transformations</p>
                 <p className="text-white font-normal text-base xl:text-lg md:max-w-[588px] md:w-1/2">With hundreds of smiles transformed in Studio City and beyond, Alluna Dental is trusted by patients who want natural results, luxury comfort, and precision care. From veneers to complete makeovers, our boutique approach has earned us 5-star reviews and national recognition.</p>
 
@@ -82,7 +80,7 @@ export const ExperienceSection = () => {
                 <ArrowRightIcon className="text-space-blue" />
             </div>
 
-             <div className="flex md:hidden items-center justify-center gap-4 mt-16 w-full bg-white rounded-2xl md:rounded-2xl pr-[34px] pl-10 md:px-8 py-5 mb-28">
+            <div className="flex md:hidden items-center justify-center gap-4 mt-16 w-full bg-white rounded-2xl md:rounded-2xl pr-[34px] pl-10 md:px-8 py-5 mb-28">
                 <p className="text-base xl:text-lg font-medium text-space-blue">Join 780+ Patients </p>
                 <ArrowRightIcon className="text-space-blue" />
             </div>

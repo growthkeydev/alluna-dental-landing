@@ -15,7 +15,7 @@ export const SmileProofSection = () => {
     ];
 
     return (
-        <div className="px-4 md:px-12 xl:px-24 py12 md:py-24 flex flex-col items-center justify-center relative">
+        <div className="px-4 md:px-12 xl:px-24 pt-12 md:py-24 flex flex-col items-center justify-center relative">
             <p className="text-lg text-space-blue">Smile Proof</p>
             <p className="text-dark font-bold text-3xl xl:text-[40px] pt-4 text-center md:text-left">The Art of Natural Results</p>
             <p className="text-dark-gray font-normal text-lg pt-3 md:pb-14 text-center">Tailored veneers designed to enhance your beauty — never fake, always authentic</p>
