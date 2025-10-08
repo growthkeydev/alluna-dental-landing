@@ -28,7 +28,6 @@ export default function Home() {
       <ProtectSection/>
       <CertificateSection/>
       <SmileProofSection/>
-      <ExpertSection/>
       <ProfessionalWorkSection/>
       <FaqSection/>
       <GetInTouchSection/>

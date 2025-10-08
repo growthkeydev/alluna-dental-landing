@@ -55,7 +55,7 @@ export const TransformationSection = () => {
             className="
                 md:bg-[url('/svg/testimonal-section-background.svg')]
                 md:bg-cover md:bg-no-repeat
-               md:px-2 px-4 xl:px-24 pt-12 md:pt-24 flex flex-col items-center justify-center
+              px-4 md:px-12 xl:px-24 pt-12 md:pt-24 flex flex-col items-center justify-center
             "
         >
             <Image

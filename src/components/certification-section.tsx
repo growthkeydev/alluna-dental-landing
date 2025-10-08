@@ -18,7 +18,7 @@ export const CertificateSection = () => {
     ];
 
     return (
-        <div className="md:px-2 px-4 xl:px-24 md:pt-24 pt-12 flex items-stretch justify-between gap-6">
+        <div className="px-4 md:px-12 xl:px-24 md:pt-24 pt-12 flex items-stretch justify-between gap-6">
             <div className="w-full md:w-[810px] flex flex-col justify-between">
                 <p className="text-space-blue text-base xl:text-lg pt-4 text-center md:text-left">
                     The Man Behind the Story

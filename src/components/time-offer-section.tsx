@@ -10,7 +10,7 @@ export const TimeOfferSection = () => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
             }}
-            className="md:px-2 xl:px-24"
+            className="px-4 md:px-12 xl:px-24"
         >
 
             <div className="relative bg-gradient-to-r from-teal-blue to-dusty-rose h-full w-full md:rounded-3xl md:grid grid-cols-2 md:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-7 py-16 justify-center">

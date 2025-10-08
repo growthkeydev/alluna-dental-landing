@@ -23,7 +23,7 @@ export const ProtectSection = () => {
     ]
 
     return (
-        <div className="md:px-2 px-4 xl:px-24 flex flex-col md:flex-row items-stretch justify-center gap-10 pt-16">
+        <div className="px-4 md:px-12 xl:px-24 flex flex-col md:flex-row items-stretch justify-center gap-10 pt-16">
             <div className="w-full md:w-[50%] flex flex-col justify-between">
                 <p className="text-black text-2xl font-semibold">Here’s how to protect your investment:</p>
                 <div className="space-y-5 bg-gradient-to-r from-teal-blue-5 to-teal-blue-15 rounded-2xl px-3 pb-6 mt-6">

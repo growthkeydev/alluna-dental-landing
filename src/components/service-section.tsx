@@ -30,7 +30,7 @@ export const ServiceSection = () => {
   ];
 
   return (
-    <section className="px-6 md:px-12 xl:px-24 py-12">
+    <section className="px-4 md:px-12 xl:px-24 py-12">
       <div className="flex flex-col md:flex-row items-stretch justify-center md:gap-[35px]">
         <div className="md:w-1/2 w-full flex">
           <Image
