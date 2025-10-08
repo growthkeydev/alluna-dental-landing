@@ -32,7 +32,7 @@ export const ProfessionalWorkSection = () => {
             style={{
                 backgroundImage: "url('/svg/professional-section-background.svg')",
                 backgroundPosition: 'center',
-                backgroundSize: 'cover',
+                backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
                 width: '100%',
 
