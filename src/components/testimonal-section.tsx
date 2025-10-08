@@ -175,25 +175,55 @@ export const TestimonalSection = () => {
 
     return (
         <div
-            style={{
-                backgroundImage: `url('/svg/testimonal-section-background.svg')`,
-                backgroundSize: '',
-                backgroundRepeat: 'no-repeat',
-            }}
-            className="md:px-2 px-4 xl:px-24 pt-12 flex flex-col items-center justify-center relative">
+            // style={{
+            //     backgroundImage: `url('/svg/testimonal-section-background.svg')`,
+            //     backgroundSize: '',
+            //     backgroundRepeat: 'no-repeat',
+            // }}
 
-            <p className="text-base text-dark">Testimonials</p>
-            <p className="text-dark text-3xl md:text-5xl font-bold mt-4 text-center md:text-left">
+            className="md:bg-[url('/svg/testimonal-section-background.svg')] md:bg-cover md:bg-no-repeat md:px-2 px-4 xl:px-24 pt-12 flex flex-col items-center justify-center relative">
+            <div className="bg-[url('/svg/testimonal-section-background.svg')] bg-cover bg-no-repeat md:hidden flex flex-col items-center justify-center">
+                <p className="text-base text-dark">Testimonials</p>
+                <p className="text-dark text-3xl md:text-5xl font-bold mt-4 text-center md:text-left">
+                    What Our Patients Say About Us
+                </p>
+                <p className="text-dark text-base md:text-[22px] font-bold mt-4 text-center">
+                    We're proud to be trusted by patients across Los Angeles who wanted
+                    natural,
+                    <br />
+                    confidence-boosting veneers. These are their words, in their own voices.
+                </p>
+
+                <div className="flex items-center justify-center md:gap-10 mt-4 ">
+                    <Image
+                        src="/svg/google-reviews.svg"
+                        alt="Google Reviews"
+                        width={209}
+                        height={72}
+                        className="w-full h-full"
+                    />
+                    <Image
+                        src="/svg/yelp-reviews.svg"
+                        alt="Yelp Reviews"
+                        width={150}
+                        height={82}
+                        className="w-full h-full"
+                    />
+                </div>
+            </div>
+
+            <p className="text-base text-dark md:block hidden">Testimonials</p>
+            <p className="text-dark text-3xl md:text-5xl font-bold mt-4 text-center md:text-left md:block hidden">
                 What Our Patients Say About Us
             </p>
-            <p className="text-dark text-base md:text-[22px] font-bold mt-4 text-center">
+            <p className="text-dark text-base md:text-[22px] font-bold mt-4 text-center md:block hidden">
                 We're proud to be trusted by patients across Los Angeles who wanted
                 natural,
                 <br />
                 confidence-boosting veneers. These are their words, in their own voices.
             </p>
 
-            <div className="flex items-center justify-center md:gap-10 mt-4">
+            <div className=" items-center justify-center md:gap-10 mt-4 md:flex hidden">
                 <Image
                     src="/svg/google-reviews.svg"
                     alt="Google Reviews"

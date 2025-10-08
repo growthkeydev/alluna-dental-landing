@@ -21,7 +21,7 @@ export const GetInTouchSection = () => (
             alt="Get In Touch Section Background"
             className="w-full h-[871px] object-cover hidden md:block"
         /> */}
-        <div className="bg-white p-6 xl:p-12 rounded-3xl md:absolute md:top-40 md:left-24 md:w-max h-max mx-4 md:mx-0">
+        <div className="bg-white p-6 xl:p-12 rounded-3xl md:absolute md:top-40 md:left-12 xl:left-24 md:w-max h-max mx-4 md:mx-0">
             <p className="text-space-blue text-lg">Get in Touch</p>
             <p className="text-dark text-bold text-2xl xl:text-[40px] py-4">Get A Free Professional <br /> Consultation Session</p>
 
