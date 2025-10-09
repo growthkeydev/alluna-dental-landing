@@ -5,19 +5,22 @@ import Link from "next/link";
 export const HeroSection = () => {
 
     return (
-        <div
-            style={{
-                // backgroundImage: "url('/svg/hero-section-background.svg')",
-                // backgroundSize: 'cover',
-                // backgroundPosition: 'center',
-                // backgroundRepeat: 'no-repeat',
-                background: 'linear-gradient(180deg, rgba(14, 182, 195, 0.00) 0%, rgba(112, 203, 216, 0.55) 100%), linear-gradient(75deg, rgba(6, 62, 67, 0.50) 10.07%, rgba(66, 154, 166, 0.15) 91.43%)',
-                width: '100%',
-                height: '100vh',
-                // borderRadius: '0 0 250px 250px',
-            }}
-            className="md:px-2 px-4 xl:px-24 relative rounded-[0_0_20%_20%] overflow-hidden"
-        >
+        <div className="w-full md:px-2 px-4 relative xl:px-24 h-[100vh] md:h-auto" >
+            <Image
+            width={1000}
+            height={1000}
+            src="/svg/hero-section-background.svg"
+            alt="Hero Section Image"
+            className="hidden md:block absolute top-0 right-0  w-full object-cover -z-10"
+            />
+
+            <Image
+            width={1000}
+            height={1000}
+            src="/svg/responsive-hero-section-background.svg"
+            alt="Hero Section Image"
+            className="block md:hidden absolute top-0 right-0 w-full object-cover -z-10"
+            />
             <div className="pt-6 flex items-center justify-between ">
                 <div className="flex items-center gap-10">
                     <Image
@@ -49,7 +52,7 @@ export const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="mt-12 2xl:mt-24">
+            <div className="mt-12 xl:mt-[20vh] flex flex-row md:justify-between justify-center md:items-end lg:px-16 xl:px-0">
                 <div className="flex flex-col items-center justify-center md:block">
                     <div className="bg-white rounded-full px-5 py-1 flex items-center justify-center gap-2 w-max">
                         <div className="w-2 h-2 bg-teal-blue rounded-full"></div>
@@ -67,25 +70,7 @@ export const HeroSection = () => {
                         <ArrowRightIcon className="text-white" />
                     </div>
                 </div>
-                <div className="absolute bottom-0 right-0 flex justify-end items-end w-full h-[40vh] md:h-full pointer-events-none">
-                    <div className="relative hidden md:block w-[60%] lg:w-[65%] xl:w-[60%] 2xl:w-[55%] max-h-[94%] min-w-[300px] aspect-[1/1] md:aspect-[4/5]">
-                        <Image
-                            src="/svg/hero-section-smile.svg"
-                            alt="Hero Section Image"
-                            fill
-                            className="object-contain object-bottom "
-                            priority
-                        />
-                    </div>
-                    <Image
-                        src="/svg/hero-section-responsive.svg"
-                        alt="Hero Section Image"
-                        width={500}
-                        height={500}
-                        className="object-contain object-bottom block md:hidden h-full"
-                    />
-                </div>
-                <div className="bg-white p-3 2xl:p-5 rounded-3xl w-max hidden md:flex flex-col items-center justify-center absolute right-12 xl:right-24 bottom-6 2xl:bottom-28">
+                <div className="bg-white p-3 2xl:p-5 rounded-3xl w-max hidden md:flex flex-col items-center justify-center h-max">
                     <Image
                         src="/svg/tooth.svg"
                         alt="Tooth Image"

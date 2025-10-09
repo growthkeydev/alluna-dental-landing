@@ -50,7 +50,7 @@ export const FaqSection = () => {
     }
 
     return (
-        <div className="px-4 md:px-12 xl:px-24 flex flex-col items-center justify-center">
+        <div className="px-4 md:px-12 xl:px-24 flex flex-col items-center justify-center pb-12 md:pb-0">
             <p className="text-space-blue text-lg ">FAQ</p>
             <p className="text-dark text-3xl xl:text-[40px] pt-4 font-bold md:font-normal text-center md:text-left">Answers to Common Questions</p>
             <p className="text-dark-gray text-base xl:text-lg pt-3 text-center md:text-left">Everything you need to know about veneers, comfort, and your smile journey with Alluna Dental.</p>
